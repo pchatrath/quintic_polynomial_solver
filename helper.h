@@ -14,7 +14,7 @@ public:
 	double T; 
 };
 
-bool close_enough(vector<double> &poly, vector<double> &target_poly, double eps=-.01) {
+bool close_enough(vector<double> &poly, vector<double> &target_poly, double eps=0.01) {
 	if(poly.size() != target_poly.size()) {
 		std::cout << "Generated poly didnt have the correct number of terms" << std::endl;
 		return false;
